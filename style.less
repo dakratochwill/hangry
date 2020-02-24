@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,700|Sacramento&display=swap');
+
+@purple: #3D0F2B;
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #fff;
+    font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Sacramento', cursive;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    margin: 0px;
+}
+
+a {
+    color: @purple;
+    font-weight: 700;
+
+    &:hover {
+        color: #000;
+    }
+}
+
+.title-box p {
+    border: 1px solid;
+    padding: 15px 40px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: 40px;
+    text-align: center;
+    margin: 100px auto;
+}
+
+a.btn-solid {
+    background: @purple;
+    color: #fff;
+    border-radius: 0px;
+    padding: 15px 40px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+    &:hover {
+        background: #000;
+        color: #fff;
+    }
+}
+
+.masthead {
+    height: 300px;
+    min-height: 300px;
+
+    .logo {
+        max-width: 100px;
+        height: auto;
+        margin: 0px 15px 15px 0px;
+    }
+
+    h1 {
+        font-size: 80px;
+    }
+
+    .lead {
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+}
+
+.navbar {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    margin: 0px 10px;
+    padding: 0px;
+}
+
+.nav-item.nav-link {
+    color: #000;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 10px 30px !important;
+    border-right: 1px solid #000;
+    font-weight: 300;
+
+    &:first-of-type {
+        border-left: 1px solid #000;
+    }
+
+    &:hover {
+        background: @purple;
+        color: #fff;
+    }
+}
+
+.nav-item.nav-link.social {
+    padding: 10px 10px !important;
+    border: none;
+
+    &:last-of-type {
+        border-right: 1px solid #000;
+    }
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 50px;
+    margin: 100px auto;
+    max-width: 1200px;
+    padding: 0px 15px;
+}
+
+.featured-post {
+    position: relative;
+    border: 1px solid #000;
+
+    .topper {
+        position: absolute;
+        font-size: 25px;
+        background: #fff;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        border: 1px solid #000;
+        padding: 5px 20px;
+        top: -25px;
+        left: 20px;
+    }
+
+    .headline {
+        font-family: 'Sacramento', cursive;
+        font-size: 45px;
+        padding: 20px;
+
+        a {
+            font-weight: inherit;
+            text-decoration: none;
+        }
+    }
+}
+
+.widget {
+
+    border: 1px solid;
+
+    .image {
+        position: relative;
+    }
+
+    .bottom-box {
+        position: absolute;
+        font-size: 25px;
+        background: #fff;
+        letter-spacing: 5px;
+        text-transform: lowercase;
+        border: 1px solid #000;
+        padding: 5px 20px;
+        bottom: -25px;
+        left: 20px;
+        right: 20px;
+        display: block;
+        text-align: center;
+    }
+}
+
+.cta {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    padding: 50px;
+
+    p {
+        font-weight: 700;
+        font-size: 40px;
+        letter-spacing: 2px;
+    }
+}
+
+.post-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 50px;
+    margin: 50px;
+
+    .post {
+        border: 1px solid #000;
+        padding-bottom: 20px;
+
+        p {
+            font-size: 16px;
+        }
+
+        a {
+            font-weight: inherit;
+            text-decoration: none;
+        }
+    }
+
+    p.headline {
+        font-family: 'Sacramento', cursive;
+        font-size: 35px;
+        padding: 20px;
+    }
+}
+
+.insta-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 5px;
+    max-width: 1300px;
+    margin: 50px auto;
+}
+
+footer {
+    margin: 100px 10px 0px;
+    border-top: 1px solid #000;
+    padding: 30px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .masthead {
+        height: auto;
+        min-height: auto;
+        margin: 50px 20px;
+
+        h1 {
+            font-size: 40px;
+        }
+    }
+
+    .navbar {
+        border: none;
+        position: absolute;
+        top: 10px;
+        right: 0;
+        left: 0;
+        background: #fff;
+        margin: 0px;
+        z-index: 999;
+    }
+
+    .navbar-collapse {
+        background: #fff;
+    }
+
+    .nav-item.nav-link,
+    .nav-item.nav-link:first-of-type {
+        border: none;
+        padding: 20px 0px !important;
+        text-align: center;
+    }
+
+    .title-box p {
+        font-size: 30px;
+        margin: 30px;
+    }
+
+    .main-grid {
+        grid-template-columns: auto;
+        margin: 30px 15px;
+    }
+
+    .cta {
+        text-align: center;
+        padding: 30px;
+
+        p {
+            font-size: 30px;
+            margin: 15px 0px;
+        }
+    }
+
+    .post-grid,
+    .insta-grid {
+        margin: 30px;
+    }
+}
