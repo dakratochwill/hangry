@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:500|Roboto:300|Sacramento&display=swap');
 
-@purple: #3D0F2B;
+@purple: #541d3d;
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -62,9 +62,8 @@ a.btn-solid {
     min-height: 300px;
 
     .logo {
-        max-width: 100px;
-        height: auto;
-        margin: 0px 15px 15px 0px;
+        max-width: 500px;
+        margin: 0px auto;
     }
 
     h1 {
@@ -223,6 +222,16 @@ footer {
     margin: 100px 10px 0px;
     border-top: 1px solid #000;
     padding: 30px;
+    
+    .logo {
+        max-width: 100px;
+    }
+    
+    a.icons {
+        display: inline-block;
+        font-size: 30px;
+        margin: 30px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -287,5 +296,13 @@ footer {
     .post-grid,
     .insta-grid {
         margin: 30px;
+    }
+    
+    footer {
+        text-align: center;
+        
+        .logo {
+            margin: 20px auto;
+        }
     }
 }
